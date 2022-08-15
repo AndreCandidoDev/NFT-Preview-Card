@@ -59,10 +59,15 @@ p, span{
     cursor: pointer;
 }
 
+.cardImage >.overlay > svg{
+    display: none;
+}
+
 .cardImage:hover > .overlay > svg{
-    margin-left: 151px;
+    display: block;
+    margin-left: 128px;
     margin-right: 151px;
-    margin-top: 152px;
+    margin-top: 122px;
     margin-bottom: 152px;
     opacity: 1;
 }
@@ -140,4 +145,20 @@ p, span{
 .contentFooter > p > span:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
+}
+
+/* small desktop and tablet ok */
+
+@media only screen and (max-width:426px){
+    .container{
+        padding: 30px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width:376px){
+    .container{
+        padding: 0px;
+        margin-top: 70px;
+    }
 }
